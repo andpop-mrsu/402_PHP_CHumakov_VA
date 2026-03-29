@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator SPA</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Calculator SPA</h1>
+    <p>Игра из лабораторной работы 3 на Slim и SQLite.</p>
+
+    <section class="card">
+        <h2>Новая игра</h2>
+        <form id="start-form">
+            <label for="player_name">Имя игрока</label>
+            <input type="text" id="player_name" name="player_name" required>
+            <button type="submit">Начать игру</button>
+        </form>
+    </section>
+
+    <section class="card hidden" id="current-game-card">
+        <h2>Текущая игра</h2>
+        <p><strong>ID игры:</strong> <span id="game-id"></span></p>
+        <p><strong>Игрок:</strong> <span id="game-player"></span></p>
+        <p><strong>Выражение:</strong> <span id="game-expression"></span></p>
+
+        <form id="step-form">
+            <label for="user_answer">Ваш ответ</label>
+            <input type="number" id="user_answer" name="user_answer" required>
+            <button type="submit">Отправить ответ</button>
+        </form>
+    </section>
+
+    <section class="card hidden" id="result-card">
+        <h2>Результат</h2>
+        <div id="result-box"></div>
+    </section>
+
+    <section class="card">
+        <h2>Все игры</h2>
+        <button id="reload-games">Обновить список</button>
+        <div id="games-list"></div>
+    </section>
+
+    <section class="card">
+        <h2>Детали игры</h2>
+        <div id="game-details">Выберите игру из списка.</div>
+    </section>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

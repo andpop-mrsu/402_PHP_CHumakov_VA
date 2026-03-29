@@ -1,0 +1,7 @@
+/vendor/
+/db/*.sqlite
+composer.lock
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
