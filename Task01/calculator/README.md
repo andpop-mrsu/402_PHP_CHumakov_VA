@@ -30,7 +30,7 @@ https://packagist.org/packages/sakatogin/calculator
 Склонировать репозиторий и перейти в каталог проекта:
 
 ```bash
-git clone <ссылка_на_репозиторий>
+git clone https://github.com/SakatoGin/Calculator.git
 cd Task01/calculator
 ```
 
@@ -52,6 +52,34 @@ composer dump-autoload -o
 
 ```bash
 php bin/calculator
+```
+
+## Глобальная установка
+
+Установить пакет глобально:
+
+```bash
+composer global require sakatogin/calculator
+```
+
+При конфликте зависимостей можно установить так:
+
+```bash
+composer global require sakatogin/calculator -W
+```
+
+Узнать путь к глобальному каталогу `bin`:
+
+```bash
+composer global config bin-dir --absolute
+```
+
+Добавить полученный путь в переменную окружения `PATH`.
+
+После этого игру можно запускать командой:
+
+```bash
+calculator
 ```
 
 ## Пример работы
