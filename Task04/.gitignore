@@ -1,0 +1,11 @@
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+/storage/logs/*.log
+/bootstrap/cache/*
+!.gitignore
+!.gitkeep
+/.env
+/database/database.sqlite
+/.phpunit.result.cache
